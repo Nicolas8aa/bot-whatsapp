@@ -15,7 +15,7 @@ Esto tambien funciona si usas `gotoFlow`
             },
             async (ctx, { flowDynamic, state }) => {
                 await state.update({ name: ctx.body })
-                flowDynamic('Gracias por tu nombre!')
+                await flowDynamic('Gracias por tu nombre!')
             }
         )
         .addAnswer(
